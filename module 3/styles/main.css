@@ -1,0 +1,139 @@
+body{
+	font-family: "Balsamiq Sans", sans-serif;
+	font-weight: 400;
+	color: #49c5b6;
+	background: rgb(1, 16, 35);	
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.logo{
+	font-size: 2.2em;
+	line-height: 3;
+}
+.menu{
+
+}
+.menu-item{
+	display: inline-block;
+}
+.menu-link{
+	text-decoration: none;
+	font-size: 1.5em;
+	line-height: 2;
+	padding: 10px 10px;
+	margin: 0 10px;
+	color: #49c5b6;
+}
+.menu-link:hover{
+	background: #1f2833;
+	border-radius: 5px;
+}
+.searcher{
+	background: transparent;
+	color: #49c5b6;
+	border: none;
+	outline: none;
+	font-size: 1.4em;
+	padding-left: 25px;
+	background: url(../img/magnifier.png);
+	background-size: 1.4em;
+	background-repeat: no-repeat;
+}
+.searcher:focus {
+	border-bottom: 2px solid #49c5b6;
+}
+.face{
+	height: calc(100vh - 6.6em);
+	background: url(../img/fon.png);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.face::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.65);
+}
+.inface{
+	z-index: 1;
+	text-align: center;
+}
+.inface h3{
+	font-size: 6em;
+	line-height: 1;
+	margin-bottom: 10px	;
+}
+.inface p{
+	font-size: 4em;
+	margin: 5px;
+}
+.nos button{
+	width: 250px;
+	height: 70px;
+}
+
+.b-left{
+	color: #49c5b6;
+	background: transparent;
+	border: 2px solid black;
+}
+.b-left:hover{
+	color: rgb(1, 16, 35);
+	background: #49c5b6;
+	border: 2px solid black;
+}
+.b-right{	
+	color: rgb(1, 16, 35);
+	background: #49c5b6;
+	border: 2px solid black;
+}
+.b-right:hover{	
+	color: #49c5b6;
+	background: transparent;
+	border: 2px solid black;
+}
+.about{
+	margin: auto;
+	width: 70%;
+	padding: 100px 0;
+	font-size: 1.5em;
+}
+.about-title{
+	text-align: center;
+}
+.about-title h3{
+	font-size: 6em;
+	margin: 20px 0;
+}
+.about-title p{
+	width: 60%;
+	margin: auto;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.col{
+	width: calc(30% - 20px);
+	min-width: 200px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+.col img{
+	width: 60%;
+}
